@@ -37,6 +37,15 @@ tn.set_right(root, b)
 tn.set_right(b, c)
 
 print(root)
-subst(root, 8, 9)
-#print(tn.get_right(root))
-print(root)
+
+
+def count_target(tnode, target):
+	"""
+	Purpose: Counts the number of times the given target appears in the given tree
+	Pre-condition:
+		tnode: the given tree node
+		target: the target value
+	Post condition: None
+	Return: the number of times the given target value appears in the given tree
+	"""
+	pass
