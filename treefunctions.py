@@ -47,9 +47,9 @@ def to_string(tnode, level=0):
         return 'EMPTY'
     else:
         result = '\t'*level
-        result += str(tn.get_data(tnode))
-        if tn.get_left(tnode) is not None:
-            result += '\n'+to_string(tn.get_left(tnode), level+1)
-        if tn.get_right(tnode) is not None:
-            result += '\n'+to_string(tn.get_right(tnode), level+1)
+        result += str(TN.get_data(tnode))
+        if TN.get_left(tnode) is not None:
+            result += '\n'+to_string(TN.get_left(tnode), level+1)
+        if TN.get_right(tnode) is not None:
+            result += '\n'+to_string(TN.get_right(tnode), level+1)
         return result

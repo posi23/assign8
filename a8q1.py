@@ -5,6 +5,7 @@
 
 import treenode as tn
 import treefunctions as tf
+import node
 
 
 def subst(tnode, t, r):
@@ -18,4 +19,24 @@ def subst(tnode, t, r):
 	Post conditions: the target value is replaced with the replacement value
 	Return: None
 	"""
-	pass
+	if tnode is not None and tn.get_data(tnode) == t:
+		tn.set_data(tnode, r)
+	elif tnode is None:
+		pass
+	else:
+		subst(tn.get_right(tnode), t, r)
+		subst(tn.get_left(tnode), t, r)
+
+
+root = tn.create(3)
+a = tn.create(7)
+b = tn.create(5)
+c = tn.create(10)
+tn.set_left(root, a)
+tn.set_right(root, b)
+tn.set_right(b, c)
+
+print(root)
+subst(root, 8, 9)
+#print(tn.get_right(root))
+print(root)
