@@ -67,4 +67,12 @@ def sum_leaf_values(tnode):
 	Post condition: None
 	Return: the sum of all the leaf values in the tree
 	"""
-	pass
+	count = 0
+	if tnode is None:
+		pass
+	elif tf.is_leaf(tnode):
+		count += 1
+	else:
+		count += sum_leaf_values(tn.get_left(tnode))
+		count += sum_leaf_values(tn.get_right(tnode))
+	return count
