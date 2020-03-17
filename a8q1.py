@@ -28,10 +28,10 @@ def subst(tnode, t, r):
 		subst(tn.get_left(tnode), t, r)
 
 
-root = tn.create(3)
-a = tn.create(7)
+root = tn.create(7)
+a = tn.create(5)
 b = tn.create(5)
-c = tn.create(10)
+c = tn.create(5)
 tn.set_left(root, a)
 tn.set_right(root, b)
 tn.set_right(b, c)
@@ -48,4 +48,12 @@ def count_target(tnode, target):
 	Post condition: None
 	Return: the number of times the given target value appears in the given tree
 	"""
-	pass
+	count = 0
+	if tnode is None:
+		pass
+	else:
+		if tn.get_data(tnode) == target:
+			count += 1
+		count += count_target(tn.get_right(tnode), target)
+		count += count_target(tn.get_left(tnode), target)
+	return count
