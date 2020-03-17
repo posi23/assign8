@@ -76,3 +76,14 @@ def sum_leaf_values(tnode):
 		count += sum_leaf_values(tn.get_left(tnode))
 		count += sum_leaf_values(tn.get_right(tnode))
 	return count
+
+
+def min_level(tnode):
+	"""
+	Purpose: Returns the height of the leaf node with the smallest level
+	Pre-condition:
+		tnode: the given tree node
+	Post condition: None
+	Return: the height of the leaf node at with the smallest level
+	"""
+	pass

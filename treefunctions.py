@@ -53,3 +53,14 @@ def to_string(tnode, level=0):
         if TN.get_right(tnode) is not None:
             result += '\n'+to_string(TN.get_right(tnode), level+1)
         return result
+
+
+root = TN.create(7)
+a = TN.create(4)
+b = TN.create(5)
+c = TN.create(9)
+TN.set_left(root, a)
+TN.set_right(root, b)
+TN.set_right(b, c)
+print(root)
+print(to_string(root))
