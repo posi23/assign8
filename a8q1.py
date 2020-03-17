@@ -86,4 +86,12 @@ def min_level(tnode):
 	Post condition: None
 	Return: the height of the leaf node at with the smallest level
 	"""
-	pass
+	height = 0
+	if tnode is None:
+		pass
+	else:
+		if tn.get_right(tnode) is not None or tn.get_left(tnode) is not None:
+			height += 1
+		height += min_level(tn.get_left(tnode))
+		height += min_level(tn.get_right(tnode))
+	return height
