@@ -57,3 +57,14 @@ def count_target(tnode, target):
 		count += count_target(tn.get_right(tnode), target)
 		count += count_target(tn.get_left(tnode), target)
 	return count
+
+
+def sum_leaf_values(tnode):
+	"""
+	Purpose: returns the sum of all the leaf values in the given tree
+	Pre-conditions:
+		tnode: the given tree node
+	Post condition: None
+	Return: the sum of all the leaf values in the tree
+	"""
+	pass
