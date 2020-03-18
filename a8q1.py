@@ -5,7 +5,6 @@
 
 import treenode as tn
 import treefunctions as tf
-import node
 
 
 def subst(tnode, t, r):

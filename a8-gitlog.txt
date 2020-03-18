@@ -1,0 +1,52 @@
+# OLAOLUWAPOSI ADEYEMI
+# 11267056
+# ooa642
+# CMPT 145- 02
+
+commit 677b7e892d9f18f7efbe61c68ed7ca6852b443ec (HEAD -> master)
+Author: Posi <andyade23@gmail.com>
+Date:   Tue Mar 17 04:40:06 2020 -0600
+
+    Implemented the base case and recursive case for the min_level() function
+
+commit 7eac3a9c708b257b7c70521f67e1a2f8525f37c8
+Author: Posi <andyade23@gmail.com>
+Date:   Tue Mar 17 04:32:19 2020 -0600
+
+    Created a new function min_level() with only a stub
+
+commit 78d24a5600b5c8b141fed4cd7eea6646157a9cb8
+Author: Posi <andyade23@gmail.com>
+Date:   Tue Mar 17 04:14:45 2020 -0600
+
+    Implemented the base cases and the recursive case for the sum_leaf_values() function
+
+commit b5a2eac1c282359ec882554833067c88599e728e
+Author: Posi <andyade23@gmail.com>
+Date:   Tue Mar 17 04:02:43 2020 -0600
+
+    Defined a new function sum_leaf_values() with only a stub in it
+
+commit eececfe52ba926bed7c7772f8cf38b58546d2c54
+Author: Posi <andyade23@gmail.com>
+Date:   Tue Mar 17 03:56:24 2020 -0600
+
+    Implemented the base case and recursive case for the count_target() function
+
+commit 58be557851e37845b32fb81d7f3bd96bfc594b1c
+Author: Posi <andyade23@gmail.com>
+Date:   Mon Mar 16 02:49:33 2020 -0600
+
+    Defined a count_target() function with only a stub in it.
+
+commit 0fbaff5523f275fef12f83ac6d6ee09d37226dc0
+Author: Posi <andyade23@gmail.com>
+Date:   Mon Mar 16 02:43:30 2020 -0600
+
+    Implemented base cases and a recursive case for the subst() function
+
+commit f0db08a436bfc595a2946e15aff5aa87b84e5cb4
+Author: Posi <andyade23@gmail.com>
+Date:   Sun Mar 15 20:53:06 2020 -0600
+
+    Created a new file 'a8q1' and defined a new function 'subst()' with only a stub in it
